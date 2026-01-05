@@ -1,0 +1,303 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>Doces Da Analu</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins:wght@400;600;700;800&display=swap" rel="stylesheet">
+
+<style>
+:root{
+  --rosa:#e91e63;
+  --rosa-claro:#ffb6d5;
+  --texto:#4a1f2c;
+}
+
+*{box-sizing:border-box}
+
+body{
+  margin:0;
+  min-height:100vh;
+  font-family:'Poppins',sans-serif;
+  background: linear-gradient(160deg,#ff5fa2,#ffb6d5);
+  display:flex;
+  justify-content:center;
+  padding:24px;
+  position:relative; /* referência pro texto lateral */
+}
+
+/* TEXTO FIXO NA ÁREA ROSA (ESQUERDA) */
+.texto-lateral{
+  position:absolute;
+  left:80px;
+  top:20%;
+  transform:translateY(-50%);
+  max-width:280px;
+  color:#fff;
+  text-align:left;
+  z-index:1;
+}
+
+.texto-lateral h2{
+  font-family:'Pacifico',cursive;
+  font-size:34px;
+  margin-bottom:12px;
+}
+
+.texto-lateral p{
+  font-size:16px;
+  line-height:1.6;
+}
+
+/* CONTAINER CENTRAL */
+.container{
+  width:100%;
+  max-width:420px;
+  text-align:center;
+  position:relative;
+  z-index:2;
+}
+
+/* TÍTULO */
+.titulo{margin-top:14px;line-height:1}
+.doces{
+  font-size:42px;
+  font-weight:800;
+  letter-spacing:6px;
+}
+.analu{
+  font-family:'Pacifico',cursive;
+  font-size:54px;
+  color:#e45a8d;
+  margin-top:-6px;
+  display:block;
+}
+.subtitulo{
+  margin-top:10px;
+  color:#fff;
+  font-size:14px;
+}
+
+/* VÍDEO */
+.video-container{
+  width:180px;
+  margin:18px auto 20px;
+  border-radius:15px;
+  overflow:hidden;
+  box-shadow:0 8px 20px rgba(0,0,0,0.2);
+  aspect-ratio:9 / 16;
+}
+.video-container iframe{
+  width:100%;
+  height:100%;
+  border:none;
+}
+
+/* CARD */
+.card{
+  background:#fff;
+  border-radius:28px;
+  padding:26px 22px;
+  box-shadow:0 18px 40px rgba(0,0,0,.18);
+}
+
+/* LISTA */
+.texto-opcoes{
+  font-weight:600;
+  color:var(--rosa);
+  margin-bottom:14px;
+}
+.lista{
+  list-style:none;
+  padding:0;
+  margin:0 0 18px;
+}
+.lista li{
+  padding:12px;
+  margin-bottom:10px;
+  background:#fff3f8;
+  border-radius:16px;
+  font-weight:600;
+  color:var(--texto);
+}
+
+/* PEDIDO */
+.pedido{
+  text-align:left;
+  margin-top:22px;
+}
+.pedido h3{
+  color:var(--rosa);
+  font-size:16px;
+  margin-bottom:8px;
+}
+.pedido select{
+  width:100%;
+  padding:10px;
+  border-radius:12px;
+  border:1px solid #ddd;
+  margin-bottom:10px;
+}
+.sabores-check label{
+  display:block;
+  font-size:14px;
+  margin-bottom:6px;
+}
+
+/* BOTÕES */
+.botao{
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  gap:10px;
+  padding:14px;
+  border-radius:26px;
+  color:#fff;
+  font-weight:700;
+  text-decoration:none;
+}
+
+.pedir-whats{background:#25D366;margin-top:16px;}
+.instagram{background:#E1306C;margin-top:14px;}
+
+.botao svg{
+  width:22px;
+  height:22px;
+  fill:#fff;
+}
+
+footer{
+  margin-top:16px;
+  color:#fff;
+  font-weight:600;
+}
+
+/* CORAÇÕES */
+.coracao{
+  position:fixed;
+  top:-10px;
+  font-size:16px;
+  color:#ff5fa2;
+  animation:cair linear forwards;
+  z-index:1;
+  pointer-events:none;
+}
+@keyframes cair{
+  to{transform:translateY(110vh);opacity:0}
+}
+</style>
+</head>
+
+<body>
+
+<!-- TEXTO NO FUNDO ROSA (ESQUERDA) -->
+<div class="texto-lateral">
+  <h2></h2>
+  <p>
+    ​"Escolha os seus sabores preferidos e deixe o resto com a gente! Preparamos cada detalhe com carinho para adoçar o seu dia."
+  </p>
+</div>
+
+<div class="container">
+
+  <div class="titulo">
+    <span class="doces">DOCES</span>
+    <span class="analu">da Analu</span>
+  </div>
+
+  <div class="subtitulo">cardápio digital 💗</div>
+
+  <div class="video-container">
+    <iframe src="https://www.youtube.com/embed/MfYpWyL2XSA" allowfullscreen></iframe>
+  </div>
+
+  <div class="card">
+
+    <div class="texto-opcoes">veja as opções</div>
+
+    <ul class="lista">
+      <li>Brigadeiro ao Leite</li>
+      <li>Brigadeiro Meio Amargo</li>
+      <li>Ninho</li>
+      <li>Ninho Colorido</li>
+      <li>Surpresa de Uva</li>
+      <li>Casadinho</li>
+      <li>Beijinho</li>
+      <li>Amendoim</li>
+      <li>Prestígio</li>
+    </ul>
+
+    <div class="pedido">
+      <h3>Monte seu pedido</h3>
+
+      <select id="combo">
+        <option value="">Escolha o combo</option>
+        <option>Caixinha da Felicidade (4 brigadeiros)</option>
+        <option>25 Brigadeiros</option>
+        <option>Meio cento de Brigadeiro (50 doces)</option>
+        <option>Cento de Brigadeiros (100 doces)</option>
+      </select>
+
+      <div class="sabores-check">
+        <label><input type="checkbox" value="Brigadeiro ao Leite"> Brigadeiro ao Leite</label>
+        <label><input type="checkbox" value="Meio Amargo"> Meio Amargo</label>
+        <label><input type="checkbox" value="Ninho"> Ninho</label>
+        <label><input type="checkbox" value="Ninho Colorido"> Ninho Colorido</label>
+        <label><input type="checkbox" value="Surpresa de Uva"> Surpresa de Uva</label>
+        <label><input type="checkbox" value="Casadinho"> Casadinho</label>
+        <label><input type="checkbox" value="Beijinho"> Beijinho</label>
+        <label><input type="checkbox" value="Amendoim"> Amendoim</label>
+        <label><input type="checkbox" value="Prestígio"> Prestígio</label>
+      </div>
+
+      <a href="#" class="botao pedir-whats" onclick="pedirWhats()">Pedir no WhatsApp</a>
+
+      <a class="botao instagram" href="https://instagram.com/_docesdaanalu_" target="_blank">Instagram</a>
+
+    </div>
+
+  </div>
+
+  <footer>Encomendas abertas 💗</footer>
+
+</div>
+
+<script>
+function pedirWhats(){
+  const combo = document.getElementById("combo").value;
+  const sabores = [...document.querySelectorAll('.sabores-check input:checked')]
+    .map(s => s.value)
+    .join(", ");
+
+  if(!combo || !sabores){
+    alert("Escolha o combo e pelo menos um sabor 💖");
+    return;
+  }
+
+  const msg = `Oii, Ana! 💖 queria saber qual valor fica ${combo} com os sabores ${sabores}`;
+  window.open(
+    `https://wa.me/558396905025?text=${encodeURIComponent(msg)}`,
+    "_blank"
+  );
+}
+
+/* CORAÇÕES */
+function criarCoracao(){
+  const c=document.createElement("div");
+  c.className="coracao";
+  c.innerHTML="💖";
+  c.style.left=Math.random()*100+"vw";
+  c.style.animationDuration=(3+Math.random()*3)+"s";
+  c.style.fontSize=(12+Math.random()*10)+"px";
+  document.body.appendChild(c);
+  setTimeout(()=>c.remove(),6000);
+}
+setInterval(criarCoracao,500);
+</script>
+
+</body>
+</html>
